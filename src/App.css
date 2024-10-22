@@ -121,6 +121,14 @@
 }
 
 @media (max-width: 1200px) {
+    .logo {
+        font-size: 3vw;
+    }
+
+    .nav-links a {
+        font-size: 2vw;
+    }
+
     .logo-container {
         position: absolute;
         left: 1%;
