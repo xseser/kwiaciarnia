@@ -139,3 +139,21 @@
     font-size: 0.8rem;
   }
 }
+
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 1%;
+    align-items: flex-start;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 10px 0;
+    text-align: left;
+  }
+}
