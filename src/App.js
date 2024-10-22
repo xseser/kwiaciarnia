@@ -13,12 +13,12 @@ function App() {
                     <nav className="navbar">
                         <div className="logo-container">
                             <Link to="/">
-                                <div className="logo">kwiaciarniaJadwigaNowak</div>
+                                <div className="logo">🌷kwiaciarniaJadwigaNowak</div>
                             </Link>
                         </div>
                         <div className="nav-links-container">
                             <ul className="nav-links">
-                                <li><Link to="/find-us" className="nav-links-id">Jak nas znaleźć?</Link></li>
+                                <li><Link to="/find-us" className="nav-links-id">🚙 Jak nas znaleźć?</Link></li>
                                 <li><Link to="/contact" className="nav-links-id">Kontakt</Link></li>
                             </ul>
                         </div>
@@ -26,11 +26,18 @@ function App() {
                 </header>
                 <main className="content">
                     <Routes>
-                        <Route path="/" element={<Home/>}/>
-                        <Route path="/find-us" element={<FindUs/>}/>
-                        <Route path="/contact" element={<Contact/>}/>
+                        <Route path="/" element={<Home />} />
+                        <Route path="/find-us" element={<FindUs />} />
+                        <Route path="/contact" element={<Contact />} />
                     </Routes>
                 </main>
+                <footer className="footer">
+                    <div className="footer-content">
+                        <p className="footer-item">Właściciel: Jadwiga Nowak</p>
+                        <p className="footer-item">Numer telefonu: 24 262 33 71</p>
+                        <p className="footer-item">Wszystkie prawa zastrzeżone © 2024 Kwiaciarnia Jadwiga Nowak</p>
+                    </div>
+                </footer>
             </div>
         </Router>
     );
