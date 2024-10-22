@@ -58,8 +58,8 @@
   display: flex;
   gap: 25px;
   margin-left: auto;
-  padding-left: 90%;
-  padding-right: 10%;
+  /*padding: 10px;*/
+  padding-left: 10%;
 }
 
 .nav-links a {
