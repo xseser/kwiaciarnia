@@ -1,0 +1,32 @@
+.find-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.map-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .map-container {
+        width: 100vw;
+        height: 50vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container {
+        width: 100vw;
+        height: 40vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container {
+        width: 100vw;
+        height: 30vh;
+    }
+}
