@@ -122,11 +122,11 @@
 
 @media (max-width: 600px) {
     .logo {
-        font-size: 4vw; /* Ustaw większy rozmiar czcionki dla logo */
+        font-size: 4vw;
     }
 
     .nav-links a {
-        font-size: 2.5vw; /* Zmniejsz rozmiar czcionki dla linków */
+        font-size: 3vw;
     }
 
     .nav-links {
