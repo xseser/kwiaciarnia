@@ -33,9 +33,9 @@ function App() {
                 </main>
                 <footer className="footer">
                     <div className="footer-content">
-                        <p className="footer-item">Właściciel: Jadwiga Nowak</p>
-                        <p className="footer-item">Numer telefonu: 24 262 33 71</p>
-                        <p className="footer-item">Wszystkie prawa zastrzeżone © 2024 Kwiaciarnia Jadwiga Nowak</p>
+                        <p className="footer-item owner">Właściciel: Jadwiga Nowak</p>
+                        <p className="footer-item phone">Numer telefonu: 24 262 33 71</p>
+                        <p className="footer-item rights">Wszystkie prawa zastrzeżone © 2024 Kwiaciarnia Jadwiga Nowak</p>
                     </div>
                 </footer>
             </div>

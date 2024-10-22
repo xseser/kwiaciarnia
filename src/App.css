@@ -9,6 +9,10 @@
     color: #fff;
 }
 
+.content {
+    flex: 1;
+}
+
 .App-header {
     width: 100%;
     padding: 30px;
@@ -139,13 +143,25 @@
 
     .nav-links li {
         margin-left: 0;
-        font-size: 1.5vw; /* Ustaw rozmiar czcionki dla elementów listy */
+        font-size: 1.5vw;
         width: 100%;
     }
 
     .nav-links a {
         padding: 10px 0;
         text-align: left;
+    }
+
+    .footer-item {
+        font-size: 2vw;
+    }
+
+    .footer-item.owner {
+        display: none;
+    }
+
+    .footer-item.phone {
+        /*display: none;*/
     }
 }
 
