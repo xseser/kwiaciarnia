@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import Home from './pages/Home';
@@ -6,12 +6,6 @@ import FindUs from './pages/FindUs';
 import Contact from './pages/Contact';
 
 function App() {
-    const [menuOpen, setMenuOpen] = useState(false);
-
-    const toggleMenu = () => {
-        setMenuOpen(!menuOpen);
-    };
-
     return (
         <Router>
             <div className="App">
@@ -23,12 +17,7 @@ function App() {
                             </Link>
                         </div>
                         <div className="nav-links-container">
-                            <div className="hamburger" onClick={toggleMenu}>
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                            <ul className={`nav-links ${menuOpen ? 'active' : ''}`}>
+                            <ul className="nav-links">
                                 <li><Link to="/find-us" className="nav-links-id">🚙 Jak nas znaleźć?</Link></li>
                                 <li><Link to="/contact" className="nav-links-id">📞 Kontakt</Link></li>
                             </ul>
