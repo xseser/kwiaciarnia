@@ -33,6 +33,7 @@
 
 .logo-container {
   position: absolute;
+  text-decoration: none;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -49,7 +50,7 @@
   font-size: 2.5vw;
   font-weight: bold;
   color: #fff;
-  text-decoration: none;
+  text-decoration: none !important;
   padding: 0;
   margin: 0;
   background-color: transparent;
@@ -88,11 +89,6 @@
 }
 
 @media (max-width: 1200px) {
-  .logo {
-    font-size: 2.5vw;
-    background-color: aqua;
-  }
-
   .logo-container {
     position: absolute;
     left: 1%;

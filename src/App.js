@@ -12,7 +12,7 @@ function App() {
                 <header className="App-header">
                     <nav className="navbar">
                         <div className="logo-container">
-                            <Link to="/">
+                            <Link to="/" style={{ textDecoration: 'none' }}>
                                 <div className="logo">🌷kwiaciarniaJadwigaNowak</div>
                             </Link>
                         </div>
