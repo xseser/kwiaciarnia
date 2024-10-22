@@ -22,7 +22,7 @@
 
 .navbar {
   width: 90%;
-  max-width: 1200px;
+  max-width: 20000px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -39,12 +39,14 @@
 
 .nav-links-container {
   position: absolute;
-  right: 100%;
-  transform: translateX(-100%);
+  right: 2%;
+  display: flex;
+  justify-content: flex-end;
+  width: auto;
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2.5vw;
   font-weight: bold;
   color: #fff;
   text-decoration: none;
@@ -56,23 +58,23 @@
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 25px;
-  margin-left: auto;
-  padding-left: 90%;
-  padding-right: 10%;
+  gap: 2%;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-links li {
-  white-space: nowrap; /* Zapobiega łamaniu tekstu */
+  white-space: nowrap;
+  margin-left: 2%;
 }
 
 .nav-links a {
   text-decoration: none;
   color: #fff;
-  font-size: 1rem;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
   transition: color 0.7s;
-  padding: 10px 15px; /* Dodanie przestrzeni wokół linków */
-  border-radius: 5px; /* Zaokrąglenie krawędzi */
+  padding: 10px 15px;
+  border-radius: 5px;
 }
 
 .nav-links a:hover {
@@ -85,33 +87,26 @@
   width: 100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .logo {
-    font-size: 2rem;
+    font-size: 2.5vw;
+    background-color: aqua;
   }
 
-  .nav-links {
-    flex-direction: column; /* Zmiana kierunku na kolumnę dla mniejszych ekranów */
-    align-items: center;
-  }
-
-  .nav-links-container {
-    position: static; /* Zmiana na static, aby kontener był bardziej elastyczny */
-    padding: 0; /* Usunięcie paddingu */
-  }
-
-  .nav-links {
-    padding: 0; /* Usunięcie paddingu dla nawigacji */
+  .logo-container {
+    position: absolute;
+    left: 1%;
+    transform: translateX(1%);
   }
 }
 
 @media (max-width: 480px) {
   .logo {
-    font-size: 1.5rem;
+    font-size: clamp(1rem, 3.5vw, 1.5rem); /* Jeszcze mniejszy rozmiar dla małych ekranów */
   }
 
-  .footer-item {
-    font-size: 0.7rem; /* Jeszcze mniejsza czcionka na bardzo małych ekranach */
+  .nav-links a {
+    font-size: clamp(0.7rem, 2vw, 1rem); /* Mniejsza czcionka dla linków */
   }
 }
 
@@ -129,7 +124,7 @@
 
 .footer-content {
   display: flex;
-  justify-content: space-around; /* Równomierne rozmieszczenie elementów */
+  justify-content: space-around;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
@@ -141,6 +136,6 @@
 
 @media (max-width: 768px) {
   .footer-item {
-    font-size: 0.8rem; /* Mniejsza czcionka na mniejszych ekranach */
+    font-size: 0.8rem;
   }
 }

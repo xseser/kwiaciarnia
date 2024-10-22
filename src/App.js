@@ -19,7 +19,7 @@ function App() {
                         <div className="nav-links-container">
                             <ul className="nav-links">
                                 <li><Link to="/find-us" className="nav-links-id">🚙 Jak nas znaleźć?</Link></li>
-                                <li><Link to="/contact" className="nav-links-id">Kontakt</Link></li>
+                                <li><Link to="/contact" className="nav-links-id">📞 Kontakt</Link></li>
                             </ul>
                         </div>
                     </nav>
