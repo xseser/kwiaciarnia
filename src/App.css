@@ -62,29 +62,85 @@
   padding-right: 10%;
 }
 
+.nav-links li {
+  white-space: nowrap; /* Zapobiega łamaniu tekstu */
+}
+
 .nav-links a {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
   transition: color 0.7s;
+  padding: 10px 15px; /* Dodanie przestrzeni wokół linków */
+  border-radius: 5px; /* Zaokrąglenie krawędzi */
 }
 
 .nav-links a:hover {
   color: #a0eaff;
+  background-color: rgba(255, 255, 255, 0.2); /* Dodanie efektu tła na hover */
 }
 
 .nav-links-id {
   font-weight: bold;
+  width: 100px;
 }
 
 @media (max-width: 768px) {
   .logo {
     font-size: 2rem;
   }
+
+  .nav-links {
+    flex-direction: column; /* Zmiana kierunku na kolumnę dla mniejszych ekranów */
+    align-items: center;
+  }
+
+  .nav-links-container {
+    position: static; /* Zmiana na static, aby kontener był bardziej elastyczny */
+    padding: 0; /* Usunięcie paddingu */
+  }
+
+  .nav-links {
+    padding: 0; /* Usunięcie paddingu dla nawigacji */
+  }
 }
 
 @media (max-width: 480px) {
   .logo {
     font-size: 1.5rem;
+  }
+
+  .footer-item {
+    font-size: 0.7rem; /* Jeszcze mniejsza czcionka na bardzo małych ekranach */
+  }
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around; /* Równomierne rozmieszczenie elementów */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-item {
+  margin: 0 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-item {
+    font-size: 0.8rem; /* Mniejsza czcionka na mniejszych ekranach */
   }
 }
