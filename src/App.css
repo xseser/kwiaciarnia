@@ -88,6 +88,22 @@
   width: 100px;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  z-index: 20; /* Dodano z-index, aby hamburger był na wierzchu */
+}
+
+.hamburger div {
+  height: 3px;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+
 @media (max-width: 1200px) {
   .logo-container {
     position: absolute;
@@ -96,9 +112,47 @@
   }
 }
 
+@media (max-width: 450px) {
+  .logo {
+    font-size: 1.5vw;
+  }
+
+  .nav-links-container {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    margin-right: 14vw;
+  }
+
+  .nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    z-index: 10;
+  }
+
+  .nav-links li {
+    margin-left: 0;
+  }
+
+  .nav-links a {
+    text-align: center;
+  }
+}
+
 @media (max-width: 480px) {
   .logo {
-    font-size: clamp(1rem, 3.5vw, 1.5rem); /* Jeszcze mniejszy rozmiar dla małych ekranów */
+    font-size: clamp(1rem, 3.5vw, 1.5rem);
   }
 
   .nav-links a {
@@ -130,16 +184,17 @@
   margin: 0 10px;
 }
 
-@media (max-width: 768px) {
-  .footer-item {
-    font-size: 0.8rem;
-  }
-}
+/*@media (max-width: 768px) {*/
+/*  .footer-item {*/
+/*    font-size: 0.8rem;*/
+/*  }*/
+/*}*/
 
 @media (max-width: 600px) {
   .nav-links {
     flex-direction: column;
-    gap: 1%;
+    max-height: 10000px;
+    gap: 2vh;
     align-items: flex-start;
   }
 
