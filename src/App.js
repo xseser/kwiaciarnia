@@ -9,6 +9,8 @@ function App() {
     return (
         <Router>
             <div className="App">
+                <div className="left-image"></div>
+                <div className="right-image"></div>
                 <header className="App-header">
                     <nav className="navbar">
                         <div className="logo-container">

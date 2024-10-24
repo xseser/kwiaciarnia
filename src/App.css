@@ -1,6 +1,5 @@
 .App {
     min-height: 100vh;
-    background: linear-gradient(135deg, #4c4bff, #a0eaff);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +10,45 @@
     padding: 0;
     width: 100vw;
     overflow-x: hidden;
+    position: relative;
+    background: linear-gradient(135deg, rgba(76, 75, 255, 0.7), rgba(160, 234, 255, 0.7)) no-repeat center center;
+    z-index: 1;
 }
+
+.App::before,
+.App::after {
+    content: '';
+    position: absolute;
+    width: 10vw;
+    /*width: 250px;*/
+    /*height: 250px;*/
+    height: 30vh;
+    background-image: url('./rose-removebg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 0;
+    z-index: -1;
+}
+
+.App::before {
+    left: -5%;
+    transform: translateY(10%) rotate(45deg); /* Drobne przesunięcie w dół */
+}
+
+.App::after {
+    right: -5%;
+    transform: translateY(0) rotate(-45deg); /* Ustawienie bez przesunięcia w Y */
+}
+
+.content {
+    flex: 1;
+}
+
+
+
+
+
+
 
 .content {
     flex: 1;
